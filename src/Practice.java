@@ -28,4 +28,20 @@ public class Practice {
     // For each method you are only required to implement it for one of the data
     // structures. But use a different data structure for each method. For example,
     // do maxDiff with an array, the next question with a Set, etc.
+
+    //Find the longest word that starts with a specific character letter in a arrayList:
+
+    public static String longestArrayList(ArrayList<String> list, char letter){
+        String longest = "";
+
+        for(int i =0; i < list.size(); i++){
+            String word = list.get(i);
+
+            if (word.charAt(0) == letter && word.length()> longest.length()){
+                longest =word;
+            }
+        }
+        return longest;
+    }
+
 }
