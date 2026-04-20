@@ -78,5 +78,20 @@ public static int differenceMapValues(HashMap<String, Integer> map) {
     return odd - even;
 }
 
+//Find the second-largest number in hashmap keys:
+public static int secondLargestKeys(HashMap<Integer, String> map) {
+    int max = Integer.MIN_VALUE;
+    int secondMax = Integer.MIN_VALUE;
 
+    for (int key : map.keySet()) {
+        if (key > max) {
+            secondMax = max;
+            max = key;
+        } else if (key > secondMax && key != max) {
+            secondMax = key;
+        }
+    }
+
+    return secondMax;
+}
 

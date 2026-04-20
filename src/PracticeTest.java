@@ -20,6 +20,15 @@ public class PracticeTest {
     
 
     // TODO: Make tests for each problem you solve
+
+    @Test 
+    void testLongestArrayList(){
+        //arrange
+
+        //act
+
+        //assert
+    }
     
 }
 
