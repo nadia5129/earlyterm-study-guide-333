@@ -1,5 +1,8 @@
-import static org.junit.Assert.*;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
 public class PracticeTest {
@@ -22,12 +25,32 @@ public class PracticeTest {
     // TODO: Make tests for each problem you solve
 
     @Test 
-    void testLongestArrayList(){
+    void testlongestArrayList(){
         //arrange
+        ArrayList<String> list = new ArrayList<>();
+        list.add("yellow");
+        list.add("red");
 
         //act
+        String actual = Practice.longestArrayList(list, 'y');
 
         //assert
+        assertEquals("yellow", actual);
+    }
+
+
+    @Test 
+    void testWordCounter(){
+        //arange
+        HashSet<String>set = new HashSet<>();
+        set.add("cat");
+        set.add("dog");
+
+        //act 
+        int actaul = Practice.WordCounter(set, 3, 4);
+
+        //assert
+        assertEquals(3,actual);
     }
     
 }
