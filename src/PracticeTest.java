@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 public class PracticeTest {
 
-    // TODO: Make more tests for maxDiff
+    
     @Test
     void testMaxDiffPositiveAndNegative() {
         // Arrange
@@ -21,9 +21,19 @@ public class PracticeTest {
         // Largest: 9, Smallest: -5, Difference: 9 - -5 = 14
         assertEquals(14, actual);
     }
+
+    @Test
+    void testMaxDiffPositiveAndNegativeTestTwo(){
+        //arange 
+        int[] numbers ={3, 9, 10, -5};
+        // act 
+        int actual = Practice.maxDiff(numbers);
+        //assert
+        assertEquals(15, actual);
+    }
     
 
-    // TODO: Make tests for each problem you solve
+    // 
 
     @Test 
     void testlongestArrayList(){
@@ -66,7 +76,21 @@ public class PracticeTest {
         int actual = Practice.differenceMapValues(map);
         //assert
         assertEquals(1, actual);
+    }
 
+    @Test 
+    void testSecondLargestKeys(){
+        //arrange
+        HashMap<Integer, String> map = new HashMap<>();
+        map.put(10,"a");
+        map.put(3,"b");
+        map.put(7, "d");
+
+        //act 
+        int actual = Practice.secondLargestKeys(map);
+
+        //assert
+        assertEquals(7, actual);
     }
 }
 

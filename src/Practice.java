@@ -10,7 +10,6 @@ public class Practice {
      * @return the difference between the largest and smallest number
      */
     public static int maxDiff(int[] nums) {
-        // TODO: implement this
         int min = nums[0];
         int max= nums[0];
 
@@ -26,8 +25,6 @@ public class Practice {
         return max - min;
     }
 
-
-    // TODO: Implement the other methods from the README AND tests for each one
 
     // For each method you are only required to implement it for one of the data
     // structures. But use a different data structure for each method. For example,
@@ -60,7 +57,6 @@ public class Practice {
         }
         return count;
     }
-}
 
 
 //Find the difference between the how many odd and even numbers there are in HashMap value
@@ -93,5 +89,6 @@ public static int secondLargestKeys(HashMap<Integer, String> map) {
     }
 
     return secondMax;
+}
 }
 
