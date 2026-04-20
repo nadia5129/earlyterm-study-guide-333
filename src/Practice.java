@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.HashSet;
+
 public class Practice {
     /**
      * Returns the difference between the largest and smallest integer in an array.
@@ -44,4 +47,19 @@ public class Practice {
         return longest;
     }
 
+
+    //Count how many words are longer than n characters and shorter than m characters in a hashset:
+
+       public static int WordCounter(HashSet<String> set, int n, int m) {
+        int count = 0;
+        for (String word : set) {
+            if (word.length() > n && word.length() < m) {
+                count++;
+            }
+        }
+        return count;
+    }
 }
+
+
+
