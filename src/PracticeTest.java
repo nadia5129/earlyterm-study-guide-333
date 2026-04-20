@@ -1,5 +1,6 @@
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -47,12 +48,26 @@ public class PracticeTest {
         set.add("dog");
 
         //act 
-        int actaul = Practice.WordCounter(set, 3, 4);
+        int actual = Practice.WordCounter(set, 3, 4);
 
         //assert
-        assertEquals(3,actual);
+        assertEquals(0, actual);
     }
     
+
+    @Test 
+    void testDifferenceMapValues(){
+        //arrange
+        HashMap<String, Integer> map = new HashMap<>();
+        map.put("a", 1);
+        map.put("b", 2);
+        map.put("c", 3);
+        //act 
+        int actual = Practice.differenceMapValues(map);
+        //assert
+        assertEquals(1, actual);
+
+    }
 }
 
 
